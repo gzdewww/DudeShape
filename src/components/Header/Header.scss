@@ -1,0 +1,42 @@
+@use "../../scss/variables" as *;
+
+.header {
+  backdrop-filter: blur(8px);
+  background-color: #fff9;
+  z-index: 100;
+  position: sticky;
+  top: 0;
+  padding: 30px 120px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  .header-logo {
+    
+    display: flex;
+    justify-content: space-between;
+
+    font-family: $complementary-family;
+    font-weight: 700;
+    font-size: 24px;
+    color: $color-accent;
+  }
+  .header-nav {
+    font-family: $main-family;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    a {
+      text-decoration: none;
+      color: $color-main;
+    }
+  }
+  svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    &:first-child {
+      margin-right: 40px;
+    }
+  }
+}

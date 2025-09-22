@@ -1,0 +1,36 @@
+@use "../../scss/variables.scss" as *;
+
+.hero-section {
+  height: 700px;
+  width: 100%;
+  border: 1px dashed #000;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  .hero-section-content {
+    box-sizing: border-box;
+    text-align: left;
+    bottom: 120px;
+    position: absolute;
+    background: $bg-accent;
+    width: 620px;
+    height: 470px;
+    padding: 75px 100px;
+    color: $color-complementary;
+    h1 {
+      font-family: $complementary-family;
+      font-size: 56px;
+    }
+    p {
+      margin-top: 30px;
+      font-family: $main-family;
+      font-size: 20px;
+      line-height: 145%;
+    }
+  }
+  img {
+    position: absolute;
+    right: 120px;
+    height: 700px;
+  }
+}
